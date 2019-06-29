@@ -1,0 +1,19 @@
+#ignore derived objects and other non-necessary files
+.atmelstart
+Config
+Debug
+Device_Startup
+examples
+hal
+hpl
+hri 
+thirdparty
+atmel_start.c
+atmel_start.h
+atmel_start_pins.h
+*.xml
+*.cproj
+driver_init.c
+driver_init.h
+rtos_start.c
+rtos_start.h
