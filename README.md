@@ -1,4 +1,4 @@
-* This is the readme file for the iot solution*
+
 
 # Description
 The system currently consists of two tasks:
