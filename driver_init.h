@@ -21,13 +21,34 @@ extern "C" {
 #include <hal_io.h>
 #include <hal_sleep.h>
 
-#include <hal_usart_sync.h>
+#include <hal_usart_os.h>
 
-extern struct usart_sync_descriptor USART_0;
+#include <hal_usart_os.h>
+
+#include <hal_wdt.h>
+
+#define USART_0_BUFFER_SIZE 16
+
+#define EDBG_COM_BUFFER_SIZE 16
+
+extern struct usart_os_descriptor USART_0;
+extern uint8_t                    USART_0_buffer[];
+
+extern struct usart_os_descriptor EDBG_COM;
+extern uint8_t                    EDBG_COM_buffer[];
+
+extern struct wdt_descriptor WDT_0;
 
 void USART_0_PORT_init(void);
 void USART_0_CLOCK_init(void);
 void USART_0_init(void);
+
+void EDBG_COM_PORT_init(void);
+void EDBG_COM_CLOCK_init(void);
+void EDBG_COM_init(void);
+
+void WDT_0_CLOCK_init(void);
+void WDT_0_init(void);
 
 /**
  * \brief Perform system initialization, initialize pins and clocks for
