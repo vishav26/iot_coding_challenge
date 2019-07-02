@@ -39,7 +39,7 @@
  *
  * \acme_license_stop
  *
- * Project: Dott1
+ * Project: RTOS_demo_uart
  * Target:  ATSAME54P20A 
  *
  **/
