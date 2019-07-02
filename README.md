@@ -1,6 +1,6 @@
 
-* This is the readme file for the iot solution*
-=======
+* This is the readme file for the iot solution
+
 
 
 
